@@ -5,10 +5,8 @@
 package tdd.tdc.test.unit;
 
 import static org.hamcrest.Matchers.contains;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +21,7 @@ import tdd.tdc.domain.MyList;
 
 public class ListTest {
 
+	@SuppressWarnings("unchecked")
 	@Test
 	public void testList() throws Exception {
 		Item[] aTest = new Item[] { new Item("Batata", 4.0f), 
@@ -34,6 +33,7 @@ public class ListTest {
 		List<Item> list1 = l.getMyList();
 
 		assertTrue(list1.size() == 5);
+		
 		Assert.assertThat(list1,
 				IsIterableContainingInAnyOrder.containsInAnyOrder(
 						HasPropertyWithValue.hasProperty("name", Is.is("Couve")),

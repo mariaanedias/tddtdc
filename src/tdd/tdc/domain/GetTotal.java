@@ -15,4 +15,17 @@ public class GetTotal {
 	public String getTotalAsString(String param) {
 		return "20";
 	}
+	
+	public int doSomething() throws MyException {
+		//DO SOMETHING
+		//DO SOMETHING
+		return getTotal(2, 4);
+		//DO SOMETHING
+		//DO SOMETHING
+	}
+	
+	private int getTotal(int x, int y) {
+		Sum s = new Sum();
+		return s.sum(x, y);
+	}
 }

@@ -1,0 +1,6 @@
+SumTest (basic JUnit)
+ListTest (Hamcrest Matchers)
+MockxSpy (difference between mock x spy, stub)
+TotalTest (normal and static methods)
+PrivateTest (private method - spy)
+DoAnswerTest (get/set using doAnswer)

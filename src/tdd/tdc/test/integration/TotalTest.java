@@ -38,23 +38,6 @@ public class TotalTest {
 		}
 	}
 
-	// @Test
-	public void calculateTotalTest() {
-		try {
-			GetTotal gt = org.mockito.Mockito.mock(GetTotal.class);
-			Mockito.when(GetTotal.getStaticTotal()).thenReturn(5);
-			InfoFromAnotherSystem info = new InfoFromAnotherSystem(gt);
-			int total = InfoFromAnotherSystem.calculeSomethingStatic(2);
-
-			verifyStatic(times(1));
-			Mockito.verify(gt, Mockito.times(1)).getStaticTotal();
-			assertEquals(total, 15);
-		} catch (Exception e) {
-			e.printStackTrace();
-
-		}
-	}
-
 	@Test
 	public void calculateTotalStatic() {
 		try {
