@@ -13,7 +13,7 @@ import tdd.tdc.domain.Sum;
 public class SumTest {
 	
 	@Test
-	public void testMetodo() {
+	public void testMethod() {
 		Sum s = new Sum();
 		int z = s.sum(1, 2);
 		assertEquals(2, z);
