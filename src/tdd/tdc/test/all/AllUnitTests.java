@@ -4,10 +4,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
+import tdd.tdc.test.unit.ListTest;
 import tdd.tdc.test.unit.SumTest;
 
 @RunWith(Suite.class)
-@SuiteClasses({ SumTest.class })
+@SuiteClasses({ SumTest.class, ListTest.class })
 public class AllUnitTests {
 
 }
